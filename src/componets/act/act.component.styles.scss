@@ -1,0 +1,22 @@
+$textColor: white;
+
+.app-container {
+  width: 414px;
+  // height: 100%;
+  // border: 1px white solid;
+  margin: 3em auto;
+  overflow: auto;
+  padding: 1em;
+  color: white;
+  line-height: 1.7em;
+}
+
+.app-container::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  color: black;
+  height: 2em;
+  border: black;
+}
