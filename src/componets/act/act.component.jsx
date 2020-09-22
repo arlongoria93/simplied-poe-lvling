@@ -26,7 +26,7 @@ class Act extends React.Component {
 
     const actObjectives = test2.map((collection) =>
       collection.act.map((act, i) => (
-        <div>
+        <div key={i}>
           <hr />
           <ActSelect key={i} act={act} />
         </div>
@@ -86,7 +86,7 @@ class Act extends React.Component {
                   value: 6,
                 });
               }}
-            />{" "}
+            />
             <CustomBtn
               actName="Act 7"
               clicks={() => {
@@ -94,7 +94,7 @@ class Act extends React.Component {
                   value: 7,
                 });
               }}
-            />{" "}
+            />
             <CustomBtn
               actName="Act 8"
               clicks={() => {
@@ -102,7 +102,7 @@ class Act extends React.Component {
                   value: 8,
                 });
               }}
-            />{" "}
+            />
             <CustomBtn
               actName="Act 9"
               clicks={() => {
@@ -110,7 +110,7 @@ class Act extends React.Component {
                   value: 9,
                 });
               }}
-            />{" "}
+            />
             <CustomBtn
               actName="Act 10"
               clicks={() => {
@@ -118,13 +118,12 @@ class Act extends React.Component {
                   value: 10,
                 });
               }}
-            />{" "}
-          </Grid>{" "}
+            />
+          </Grid>
           <Grid container item direction="column">
-            {" "}
-            {actObjectives}{" "}
-          </Grid>{" "}
-        </Grid>{" "}
+            {actObjectives}
+          </Grid>
+        </Grid>
       </div>
     );
   }
